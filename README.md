@@ -20,6 +20,7 @@ bookmarking DSA question
 - [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/)
 - [1011. Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/)
 - [410. Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/description/)
+- [1552. Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/)
 
 **4. PEAK FINDING (Bitonic Array)**
 - [852. Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/)
