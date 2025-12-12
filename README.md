@@ -15,7 +15,7 @@ bookmarking DSA question
 - [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)
 - [81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/)
 
-**3. BINARY SEARCH ON ANSWER (The "Koko" Pattern)**(most imp pattern)
+**3. BINARY SEARCH ON ANSWER (The "Koko" Pattern)** (most imp pattern)
 - [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/description/)
 - [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/)
 - [1011. Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/)
