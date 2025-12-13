@@ -1,7 +1,11 @@
-# Personal-DSA-sheet
-bookmarking DSA question
+# 🚀 Data Structures & Algorithms: Patterns & Roadmap
 
-## 📚 ARRAYS & HASHING
+A complete collection of LeetCode questions organized by **underlying logic** rather than random difficulty. Mastering these patterns allows you to solve 95% of interview questions.
+
+---
+
+<details>
+<summary><h2>📚 ARRAYS & HASHING (Click to Expand)</h2></summary>
 
 ### **1. TWO POINTERS**
 **Logic:** Use two indexes (usually `left` and `right`) moving towards each other or in parallel to find pairs or reverse logic.
@@ -18,7 +22,7 @@ bookmarking DSA question
 - [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/)
 - [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) *(Hard)*
 
----
+<br>
 
 ### **2. SLIDING WINDOW**
 **Logic:** Maintain a window (subarray) that grows or shrinks to satisfy a condition.
@@ -36,7 +40,7 @@ bookmarking DSA question
 - [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
 - [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) *(Hard)*
 
----
+<br>
 
 ### **3. PREFIX SUM (Range Queries)**
 **Logic:** Pre-calculate sums so range `[i, j]` can be calculated in `O(1)`. Often combined with HashMaps for "Sum equals K".
@@ -52,7 +56,7 @@ bookmarking DSA question
 - [974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/)
 - [525. Contiguous Array](https://leetcode.com/problems/contiguous-array/)
 
----
+<br>
 
 ### **4. FAST & SLOW POINTERS (Cycle & In-Place)**
 **Logic:** One pointer moves 1 step, another moves 2 steps. Also used for read/write pointers.
@@ -66,7 +70,7 @@ bookmarking DSA question
 - [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 - [202. Happy Number](https://leetcode.com/problems/happy-number/)
 
----
+<br>
 
 ### **5. INTERVALS (Merging & Overlapping)**
 **Logic:** Dealing with time ranges. **Always sort by Start Time** first.
@@ -82,7 +86,7 @@ bookmarking DSA question
 - [228. Summary Ranges](https://leetcode.com/problems/summary-ranges/)
 - [986. Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/)
 
----
+<br>
 
 ### **6. CYCLIC SORT**
 **Logic:** Iterate and swap `nums[i]` to `nums[nums[i] - 1]`.
@@ -96,7 +100,7 @@ bookmarking DSA question
 - [448. Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)
 - [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/) *(Hard)*
 
----
+<br>
 
 ### **7. MONOTONIC STACK**
 **Logic:** Maintain a stack that is strictly increasing or decreasing.
@@ -110,7 +114,7 @@ bookmarking DSA question
 - [503. Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)
 - [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) *(Hard)*
 
----
+<br>
 
 ### **8. KADANE’S ALGORITHM**
 **Logic:** Carry a local maximum; reset if the current sum becomes negative.
@@ -123,7 +127,7 @@ bookmarking DSA question
 **🟡 PRACTICE**
 - [918. Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/)
 
----
+<br>
 
 ### **9. DUTCH NATIONAL FLAG (Partitioning)**
 **Logic:** 3-way partitioning (Low, Mid, High pointers).
@@ -132,7 +136,7 @@ bookmarking DSA question
 **🟢 ESSENTIALS**
 - [75. Sort Colors](https://leetcode.com/problems/sort-colors/)
 
----
+<br>
 
 ### **10. 2D MATRIX SIMULATION**
 **Logic:** Grid traversal logic.
@@ -146,7 +150,7 @@ bookmarking DSA question
 - [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
 - [59. Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)
 
----
+<br>
 
 ### **11. MOORE’S VOTING ALGORITHM**
 **Logic:** Cancellation logic to find a majority element.
@@ -158,39 +162,72 @@ bookmarking DSA question
 **🟡 PRACTICE**
 - [229. Majority Element II](https://leetcode.com/problems/majority-element-ii/)
 
+</details>
+
 ---
 
+<details>
+<summary><h2>🔎 BINARY SEARCH (Click to Expand)</h2></summary>
 
+### **1. BASIC & BOUNDARY**
+**Logic:** Standard Binary search, but keep searching after finding target to find edges.
+* **When to use:** Sorted array, search for index/element.
 
-## BINARY SEARCH
+**🟢 ESSENTIALS**
+- [704. Binary Search](https://leetcode.com/problems/binary-search/)
+- [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 
-#### PATTERNS
+**🟡 PRACTICE**
+- [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
 
-**1. BASIC & BOUNDARY (First/Last Occurrence)**
-- [704. Binary Search](https://leetcode.com/problems/binary-search/description/)
-- [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/description/)
-- [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
+<br>
 
-**2. ROTATED SORTED ARRAY**
-- [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)
-- [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)
-- [81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/)
+### **2. SEARCH ON ANSWER (The "Koko" Pattern)**
+**Logic:** The answer is a value in a range (e.g., 1 to 10^9). Binary search that value and check validity.
+* **When to use:** "Minimum time to...", "Smallest divisor...", "Minimize max...".
 
-**3. BINARY SEARCH ON ANSWER (The "Koko" Pattern)** (most imp pattern)
-- [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/description/)
-- [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/)
-- [1011. Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/description/)
-- [410. Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/description/)
-- [1552. Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/)
+**🟢 ESSENTIALS**
+- [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/) *(Math basic)*
+- [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) *(Standard Min-Max)*
+- [1011. Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)
 
-**4. PEAK FINDING (Bitonic Array)**
-- [852. Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/)
-- [162. Find Peak Element](https://leetcode.com/problems/find-peak-element/description/)
+**🟡 PRACTICE**
+- [410. Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/)
 
-**5. 2D MATRIX**
-- [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/)
-- [240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/)
+<br>
 
-**6. ADVANCED / MEDIAN**
-- [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
+### **3. ROTATED SORTED ARRAY**
+**Logic:** Identify which half is sorted, then check if target is in that half.
+* **When to use:** "Search in rotated array", "Find min in rotated array".
 
+**🟢 ESSENTIALS**
+- [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+- [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+
+**🟡 PRACTICE**
+- [81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)
+
+<br>
+
+### **4. PEAK FINDING**
+**Logic:** Compare `mid` with neighbor `mid+1`.
+* **When to use:** Bitonic array (mountain shape), find peak.
+
+**🟢 ESSENTIALS**
+- [162. Find Peak Element](https://leetcode.com/problems/find-peak-element/)
+
+**🟡 PRACTICE**
+- [852. Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)
+
+<br>
+
+### **5. 2D BINARY SEARCH**
+**Logic:** Map 2D indices to 1D (`row = mid/n`, `col = mid%n`) or start from top-right corner.
+
+**🟢 ESSENTIALS**
+- [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)
+
+**🟡 PRACTICE**
+- [240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)
+
+</details>
